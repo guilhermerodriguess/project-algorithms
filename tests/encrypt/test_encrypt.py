@@ -9,7 +9,7 @@ def test_encrypt_message():
 
     with pytest.raises(TypeError) as err:
         encrypt_message(123, 2)
-    assert str(err.value) == "tipo inválido para messages"
+    assert str(err.value) == "tipo inválido para message"
 
     encrypted = encrypt_message("message", 10)
     assert encrypted == "egassem", f"Expected 'egassem', got '{encrypted}'"
